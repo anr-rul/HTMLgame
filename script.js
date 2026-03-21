@@ -54,7 +54,7 @@ function getDynamicPlatformWidth() {
 
 function addPlatform() {
   const last = platforms[platforms.length - 1];
-  const distance = Math.random() * (220 - 30) + 30;
+  const distance = Math.random() * (250 - 30) + 30;
   const width = getDynamicPlatformWidth();
   platforms.push({ x: last.x + last.w + distance, w: width });
 }
