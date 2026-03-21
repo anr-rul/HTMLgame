@@ -129,9 +129,13 @@ html {
         font-size: 40px;
     }
 
+    .city-silhouette {
+        display: none;
+    }
+
     #action-btn {
         width: 60px;
         height: 60px;
-        bottom: 6%;
+        bottom: 15vh;
     }
 }
