@@ -16,6 +16,21 @@ html {
     background: linear-gradient(to bottom, #87CEEB 0%, #e0f7fa 100%);
 }
 
+.background {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    display: flex;
+    font-weight: 900;
+    font-size: 70px;
+    opacity: 0.1;
+    position: absolute;
+    top: 20%;
+    color: #646464;
+}
+
 #score-container {
     position: absolute;
     top: 60px;
@@ -138,5 +153,15 @@ html {
         width: 60px;
         height: 60px;
         bottom: 7vh;
+    }
+
+    .label {
+        font-weight: 800;
+        font-size: 70px;
+        opacity: 0.1;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        color: #646464;
     }
 }
