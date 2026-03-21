@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stick Hero Custom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="background">
+            <div class="sky"></div>
+            <div class="city-silhouette"></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="score-container">
+            <div id="live-score">0</div>
+        </div>
+        <div id="high-score">High Score: 0</div>
+
+        <button id="action-btn"></button>
+
+        <div id="restart-menu" class="hidden">
+            <h1 id="status-text">GAME OVER</h1>
+            <p>Skor Anda: <span id="final-score">0</span></p>
+            <button id="btn-restart" onclick="resetGame()">Main Lagi</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
