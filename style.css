@@ -12,7 +12,7 @@ html {
 #container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to bottom, #87CEEB 0%, #e0f7fa 100%);
 }
 
@@ -132,6 +132,6 @@ html {
     #action-btn {
         width: 60px;
         height: 60px;
-        bottom: 20px;
+        bottom: 6%;
     }
 }
