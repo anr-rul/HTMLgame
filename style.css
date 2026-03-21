@@ -140,3 +140,9 @@ html {
         bottom: 7vh;
     }
 }
+
+@media (max-width: 489px) {
+    #gameCanvas {
+        transform: scale(0.6);
+    }
+}
