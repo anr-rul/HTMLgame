@@ -6,7 +6,7 @@ const highScoreEl = document.getElementById("high-score");
 const restartMenu = document.getElementById("restart-menu");
 
 // --- INISIALISASI AUDIO ---
-const sndWalk = new Audio("sfx/walk.mp3");
+const sndWalk = new Audio("sfx/walk3x.mp3");
 const sndFall = new Audio("sfx/fall.mp3");
 const sndStretch = new Audio("sfx/stretch.mp3");
 const sndStickHit = new Audio("sfx/stick_hit.mp3");
