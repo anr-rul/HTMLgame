@@ -123,7 +123,7 @@ html {
     display: none !important;
 }
 
-@media (max-height: 600px) {
+@media (max-width: 600px) {
     #score-container {
         top: 30px;
         font-size: 40px;
@@ -136,6 +136,6 @@ html {
     #action-btn {
         width: 60px;
         height: 60px;
-        bottom: 15vh;
+        bottom: 7vh;
     }
 }
