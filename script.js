@@ -155,10 +155,10 @@ function drawStickman(x, y, isWalking) {
 function draw() {
   const currentScale = getScale();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  if (currentScale < 1) {
-    ctx.translate(0, canvas.height * (1 - currentScale));
-    ctx.scale(currentScale, currentScale);
-  }
+  // if (currentScale < 1) {
+  //   ctx.translate(0, canvas.height * (1 - currentScale));
+  //   ctx.scale(currentScale, currentScale);
+  // }
   ctx.fillStyle = "#333";
   platforms.forEach((p) => {
     if (p.x + p.w > -100) {
