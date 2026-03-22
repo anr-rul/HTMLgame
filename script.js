@@ -4,14 +4,10 @@ const actionBtn = document.getElementById("action-btn");
 const liveScoreEl = document.getElementById("live-score");
 const highScoreEl = document.getElementById("high-score");
 const restartMenu = document.getElementById("restart-menu");
-
-// --- INISIALISASI AUDIO ---
 const sndWalk = new Audio("sfx/walk3x.mp3");
 const sndFall = new Audio("sfx/fall.mp3");
 const sndStretch = new Audio("sfx/stretch.mp3");
 const sndStickHit = new Audio("sfx/stick_hit.mp3");
-
-// Pengaturan Audio Loop untuk suara memanjang dan jalan
 sndStretch.loop = true; 
 sndWalk.loop = true;
 
@@ -81,14 +77,14 @@ function startAction(e) {
     if (e && e.cancelable) e.preventDefault();
     if (gameState === "WAITING") {
         gameState = "STRETCHING";
-        sndStretch.play(); // Efek 1: Mulai memanjang
+        sndStretch.play();
     }
 }
 
 function endAction() {
     if (gameState === "STRETCHING") {
         gameState = "TURNING";
-        sndStretch.pause(); // Berhenti memanjang
+        sndStretch.pause();
         sndStretch.currentTime = 0;
     }
 }
@@ -112,8 +108,8 @@ function update() {
         if (stick.angle >= targetAngle) {
             stick.angle = targetAngle;
             gameState = "WALKING";
-            sndStickHit.play(); // Efek 2: Tongkat menghantam platform/udara
-            sndWalk.play();     // Efek 3: Mulai berjalan
+            sndStickHit.play();
+            sndWalk.play();
         }
     }
 
@@ -130,14 +126,14 @@ function update() {
             : platforms[0].x + platforms[0].w <= STICKMAN_FIXED_X;
 
         if (stopCondition) {
-            sndWalk.pause(); // Berhenti jalan
+            sndWalk.pause();
             sndWalk.currentTime = 0;
             
             if (isSafe) {
                 checkLandingLogic();
             } else {
                 gameState = "FALLING";
-                sndFall.play(); // Efek 4: Jatuh
+                sndFall.play();
                 updateHighScore();
             }
         }
